@@ -5,11 +5,26 @@ html {
 
 #button {
     text-decoration: none;
-    background-color: bisque;
-    color: #333333;
+    background-color: coral;
+    color: #fff;
     padding: 2px 6px 2px 6px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+header > nav {
+    flex-direction: row;
+    display: flex; /* Use flexbox to layout the li elements horizontally */
+}
+
+header > nav > ul > li  {
+    width: auto;
+    list-style-type: none;
+    flex: row;
+    align-items: left;
+    align-items: flex-start;
+    text-align: start; 
 }

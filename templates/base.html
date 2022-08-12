@@ -4,11 +4,15 @@
       <title>{{ title }} - library</title>
     </head>
     <body>
+    <header>
+        <nav>
         <ul>
           <li><a href="/">home</a></li>
           <li><a href="/new">add a new book</a></li>
         </ul>
         <hr>
+    </nav>
+    </header>
         {% block content %}{% endblock %}
     </body>
 </html>
