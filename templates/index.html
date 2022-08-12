@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<h1> books </h1>
+
+<main>
+    {% for book in books %}
+    <ul>
+        <li>
+            <a href="/books/{{ books.index(book)}}"><p>{{book.book_title}}</p></a>
+            <p>{{book.author}}</p><p> {{book.genre}}</p>
+        </li>
+    </ul>
+    {% endfor %}
+</main>
+
+
+
+{% endblock %}
+
+
